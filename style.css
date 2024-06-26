@@ -1,0 +1,26 @@
+.main_box>*{
+    max-height: 600px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    color: blanchedalmond;
+}
+
+#body_cover{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100; 
+}
+.warn{
+    width: 400px;
+    height: 300px;
+    margin: 400px auto;
+}
+
+@media (max-width : 775px) {
+    
+}

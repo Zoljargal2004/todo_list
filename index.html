@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="columns mt-6 mr-2 ml-2 ">
+      <div class="column main_box">
+        <div class="box ">
+          <h1 class="title is-3">Add</h1>
+          <div class="is-flex is-flex-direction-column" style="gap: 1em">
+            <span>Task Name</span>
+            <input
+              type="text"
+              class="input"
+              placeholder="Write your task here!"
+              id="task_name"
+            />
+            <span>Deadline</span>
+            <input type="date" class="input" style="width: 160px" id="task_dl"/>
+            <br />
+            <div class="is-flex" style="gap: 1em">
+              <div class="select">
+                <select id="taks_importance">
+                  <option>Important</option>
+                  <option>Non-Important</option>
+                </select>
+              </div>
+              <button class="button is-dark" onclick="submit()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column main_box">
+        <div  class="box pending">
+          <h1 class="title is-3">Pending</h1>
+          <div id="pending_lis">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns mt-6 mr-2 ml-2 ">
+      <div class="column main_box">
+        <div class="box  done">
+          <h1 class="title is-3">Succeeded</h1>
+          <div id="succeed_lis">
+
+          </div>
+        </div>
+      </div>
+      <div class="column main_box">
+         <div  class="box failed">
+          <h1 class="title is-3">Failed</h1>
+          <div id="failed_lis">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="body_cover" style="display: none;" onclick = disappear()>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
