@@ -1,4 +1,4 @@
-const pending_lis = JSON.parse(localStorage.getItem("pending")); 
+const pending_lis = JSON.parse(localStorage.getItem("pending")) || []; 
 const succeed_lis = JSON.parse(localStorage.getItem("succeed")) || [];
 const failed_lis = JSON.parse(localStorage.getItem("failed")) || [];
 
